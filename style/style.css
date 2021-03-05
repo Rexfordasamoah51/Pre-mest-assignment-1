@@ -1,0 +1,318 @@
+/* CSS */
+/* global effect */
+:root {
+    --ratio: 9 / 16;
+    --width: 98vmin;
+    background-color: #F8F9FF;
+    --height: calc(var(--width) * var(--ratio));
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.slight-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.slight-shape svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.slight-shape .shape-fill {
+    fill: #FFFFFF;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background-color: #172755;
+}
+
+/* navbar  */
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    height: 80px;
+    background-color: rgb(2, 2, 97);
+
+}
+
+ul#nav-items {
+    list-style: none;
+    padding-left: 100px
+
+}
+
+ul li {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    color: #8794BA;
+    padding-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* paragraph CSS */
+p {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* header CSS */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-left: 5px;
+    color: white;
+    padding-right:400px;
+}
+
+div#brand-banner {
+    display: flex;
+    align-items: center;
+
+}
+
+div#brand-banner img {
+    height: 35px;
+    padding-right: 5px;
+}
+
+.wlc-message {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding-left: 50px;
+}
+
+#wlc-message-header {
+    text-decoration-color: aqua;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Crimson Text', serif;
+}
+
+#sub-wlc-message {
+    color: #8794BA;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    /* position: absolute; */
+    width: 550px;
+    height: 255px;
+    left: calc(50% - 550px/2 - 315px);
+    top: 242px;
+}
+
+.apply-btn {
+    color: #FFF;
+    padding-right: 70px;
+    border-radius: 3px;
+    margin: 50px;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    background: #EF2A82;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.fl_tw2 {
+    color: #FFF;
+    border-radius: 3px;
+    display: inline-block;
+    height: 50px;
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    vertical-align: middle;
+    background: #EF2A82;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.fl_tw2 .fa-twitter {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 25px;
+}
+
+.fl_tw2 span {
+    display: inline-block;
+    transition: .5s
+}
+
+.fl_tw2:hover span {
+    /*HoverEffect*/
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: #8794BA;
+    border: 2px solid #EF2A82;
+}
+
+.button1:hover {
+    background-color: #EF2A82;
+    color: white;
+}
+
+.pattern{
+    position: absolute;
+}
+
+.pattern img {
+    height: 350px;
+    margin-top: 80px;
+}
+.grafit-pattern{
+    position: absolute;
+}
+.wlc-message img{
+    width:400px;
+}
+/* media query for tablet devices */
+@media (max-width: 1023px) {
+  
+  }
+  
+  /* media query for mobile devices */
+  @media (max-width: 767px) {
+    div#brand-banner {
+        /* display: flex; */
+        padding-left: 20px;
+        align-items: center;
+    
+    }
+    .wlc-message {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-content:center
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: white;
+    }
+    div#brand-banner img {
+        height: 35px;
+    }
+    .slight-shape svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 200px;
+        transform: rotateY(180deg);
+    }
+    .grafit-pattern img{
+        width: 100%;
+    }
+    .wlc-message img{
+        width:250px;
+    }
+    
+   
+ 
+    nav {
+        display: flex;
+        /* width: 100vw; */
+        align-items: center;
+        position: fixed;
+        height: 80px;
+        background-color: rgb(2, 2, 97);
+    
+    }
+    
+    ul#nav-items {
+      display: none;
+       
+    
+    }
+
+    #wlc-message-header {
+        text-decoration-color: aqua;
+        color: white;
+        font-size: 25px;
+        padding-top: 30px;
+        font-weight: bold;
+        font-family: 'Crimson Text', serif;
+    }
+
+    #sub-wlc-message{
+        font-size: 11px;
+    }
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 255px;
+        
+        top: 242px;
+    }
+    .slight-shape svg {
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 150px;
+        transform: rotateY(180deg);
+    }
+    .pattern{
+     display: none;
+    }
+    .main {
+        position: relative;
+        min-width: 98vw;
+        background-color: #172755;
+    }
+  
+  }
+
+
