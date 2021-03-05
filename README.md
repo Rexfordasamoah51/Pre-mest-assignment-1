@@ -8,7 +8,7 @@ This is a website built with html and css. It covers all the basic elements need
 
 ## Tech Use 🎨
 
-* HTML
-* CSS
+* HTML 🎐
+* CSS  🎀
 
 ### Made with love by @Rexthedev 🎈
